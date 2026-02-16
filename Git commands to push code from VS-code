@@ -1,0 +1,64 @@
+git config user.name "neeraja"
+git config user.email "neeraja.example.com"
+
+above both commands will set git username and email.
+
+
+Git is a content tracker.
+It is a distributed version control system.
+
+Git has 2 repository types.
+1.Remote Repository(Centralised server i.e git. we can save changes made locally on Remote Repository.Remote repository like backup of data or working with team and Team mates pull data from Remote repository in order to start working on your project.)
+2.Local Repository(Your own machine you have direct access to it.)
+In order to keep Remote repository and Local repository in sink we need to pull changes from Remote Repository
+
+Local Repository have 3 stages
+1.Working Area or active changes.
+2.Staging area(contains new changes soon to be commited.)
+3.Commited area(commited files)
+
+Active File you worked is in Working area.
+if you run "git add ." or "git add file name" will move working area file to staging area.
+Now the file is in Staging area.
+After this it's time to commit.Here A commit records the change of a repository compare to it's previous state.
+"git commit -m "added first story"
+Then committed file.
+here in comit you need to write very briefly what you did.
+
+If you just type git commit with out adding comment then git will open text editor there you need to provide a commit message.
+as soon as we did we see commit msg with commited file.
+
+Commit stores a copy of files with in the .git folder.
+
+
+# Git branch commands#
+git branch name ----> create a new branch
+git check out branch name ---->Switch to an existing branch
+git checkout -b branch name -----> creates a new branch and switch to it.
+
+git branch -d branch name ----->Delete a branch name
+
+git branch ---->List all branches
+
+Head points to the last commit we are on.
+
+
+We can add git remote repository to a local project with git remote add command.
+"git remote add origin" we want add remote repository give it allias name as "origin"
+No need to memorize all time the origin link(https://..../../name)(connection URL in git)
+{https://github.com/NeerajaLanka/Devops--files.git}this is my URL in git
+
+you can get all remote repositories in git by using "git remote -v" command.
+
+PUSH
+In order to keep local and remote repo same we have to push data from Local Repository(Repo) Remote Repository with git push command
+git push origin master
+The above command expecting 2 arguments.
+1.origin(Remote name alias of remote repo)
+2.master (Current branch we are on.If we didn't mention any branch name then default one is master)
+
+brew install git ---->(Will install git)
+git --version ----->will give git version
+Git clone  repository name(https://github.com/NeerajaLanka/Devops--files.git)------>Clone repository
+Git status ------->check git status
+git pull
