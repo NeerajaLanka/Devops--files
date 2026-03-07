@@ -27,4 +27,4 @@ jobs:
     - name: Execute Python script
       env:
         USER_NAME: "GitHub Contributor"
-      run: python script.py
+      run: python GitHub_Test.py
